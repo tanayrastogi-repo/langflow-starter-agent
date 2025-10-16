@@ -11,4 +11,8 @@ A small Marimo notebook that talks to a Langflow agent through its REST API.
 ## Run
 ```bash
 export LANGFLOW_API_KEY=your-key
-python notebook.py
+# Start the langflow server with the flow 
+uv run langflow run "Simple Agent.json"
+# Run the marimo as an app
+uv marimo run notebook.py
+
